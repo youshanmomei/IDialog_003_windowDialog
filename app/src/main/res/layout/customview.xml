@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_cus_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1A94F9">
+
+        <TextView
+            android:id="@+id/tv_cus_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:text="关于我们"
+            android:textColor="#000000" />
+
+        <ImageButton
+            android:id="@+id/ib_cus_imgcancel"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/canceltor" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_cus_laymessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_cus_title"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tv_orther0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Authot:  old a"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/tv_orther1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:linksClickable="true"
+            android:text="Open baidu:  www.baidu.com"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/tv_orther2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How to connect:  no connect"
+            android:textColor="#000" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_cus_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_cus_laymessage"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <Button
+            android:id="@+id/btn_sendemail"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/linkbtnbged"
+            android:linksClickable="true"
+            android:text="send a email" />
+
+        <Button
+            android:id="@+id/btn_web"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/linkbtnbged"
+            android:linksClickable="true"
+            android:text="find baidu" />
+    </LinearLayout>
+</RelativeLayout>
